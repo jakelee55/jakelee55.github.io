@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="米饭联盟成都分部官方网站">
+  <title>米饭联盟成都分部</title>
+  <link rel="icon" type="image/png" href="assets/site-favicon.png">
+  <link rel="preconnect" href="https://game.gtimg.cn">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="site-shell" id="app">
+    <header class="topbar" id="topbar">
+      <a class="brand" href="#home" aria-label="返回首页">
+        <img id="brandLogo" src="" alt="">
+      </a>
+      <nav class="topnav" id="topnav" aria-label="主导航"></nav>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="打开导航" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <aside class="social-rail" id="socialRail" aria-label="社交入口">
+      <div class="social-links" id="socialLinks"></div>
+      <button class="rail-toggle" id="railToggle" type="button" aria-label="展开社交入口"></button>
+    </aside>
+
+    <main class="snap-page" id="snapPage">
+      <section class="section hero-section is-dark" id="home" data-nav="home" data-theme="dark">
+        <img class="hero-bg" id="heroBg" src="" alt="">
+        <div class="hero-shade"></div>
+        <button class="play-button hero-play" type="button" data-video-key="brand" aria-label="播放品牌视频"></button>
+        <img class="hero-slogan" id="heroSlogan" src="" alt="">
+      </section>
+
+      <section class="section definition-section is-dark" id="definition" data-nav="definition" data-theme="dark">
+        <div class="definition-copy" id="definitionCopy"></div>
+      </section>
+
+      <section class="section featured-section is-dark" id="featured" data-nav="featured" data-theme="dark">
+        <div class="featured-bg" id="featuredBg"></div>
+        <div class="featured-barrage" id="featuredBarrage" aria-hidden="true"></div>
+        <div class="featured-photo-viewer" id="featuredPhotoViewer" hidden>
+          <img class="featured-photo-viewer-image" id="featuredPhotoViewerImage" src="" alt="">
+          <button class="featured-photo-viewer-close" id="featuredPhotoViewerClose" type="button" aria-label="关闭照片"></button>
+        </div>
+      </section>
+
+      <section class="section moments-section is-dark" id="moments" data-nav="moments" data-theme="dark">
+        <div class="moments-bg" id="momentsBg"></div>
+        <div class="section-title moments-title"></div>
+        <div class="moment-deco moment-deco-left" id="momentDecoLeft" data-depth="0.10"></div>
+        <div class="moment-deco moment-deco-right" id="momentDecoRight" data-depth="0.10"></div>
+        <div class="moment-cards" id="momentCards"></div>
+      </section>
+
+      <section class="section join-section is-light" id="join" data-nav="join" data-theme="light">
+        <div class="join-visual">
+          <div class="join-left-bg"></div>
+          <img class="join-person" id="joinPerson" src="" alt="">
+        </div>
+        <div class="section-title join-title"></div>
+        <div class="join-cards" id="joinCards"></div>
+        <article class="join-panel" id="joinPanel" hidden>
+          <button class="panel-back" id="panelBack" type="button">返回</button>
+          <div id="joinPanelContent"></div>
+        </article>
+      </section>
+
+      <footer class="section footer-section" id="footer" data-nav="footer" data-theme="dark">
+        <div class="footer-inner" id="footerInner"></div>
+      </footer>
+    </main>
+
+    <div class="video-modal" id="videoModal" hidden>
+      <button class="modal-close" id="modalClose" type="button" aria-label="关闭"></button>
+      <div class="modal-card">
+        <div class="modal-poster" id="modalPoster"></div>
+        <div class="modal-copy" id="modalCopy"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data/site-data.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
